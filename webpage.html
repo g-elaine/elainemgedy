@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "wp.css">
+<meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<body style="background-color:#638797;">
+<div class="header">
+<h2 style = "color: white">Heart of the Sea</h2>
+</div>
+
+<div class="topnav">
+<a href="https://www.facebook.com/jijhell.grace?mibextid=ZbWKwL">Facebook</a>
+<a href="https://instagram.com/hellisgrace?igshid=NTE5MzUyOTU=">Carrd</a>
+<a href="https://www.ateneo.edu/ls/soss/psychology">Education</a>
+</div>
+
+<div class="row">
+<div class="leftcolumn">
+<div class="card">
+<h2> Elaine, a lover of the sea.</h2>
+<h5>From where the sea and skies meet.</h5>
+<div class="meimg" style="height:350px;"></div>
+<p>Her.</p>
+<p>In the shallows, the waves crash against the rocks, their foam crests forming a tangle of lace over the azure. She becomes absorbed as she observes it swirl, as though the water's motions are choreographed to her emotions.</p>
+</div>
+
+<div class="card">
+<h2>the sea, her treasure.</h2>
+<!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="e2.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="e1.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="e3.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="mark.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="lilo.jpeg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="e4.jpeg" style="width:100%">
+    </div>
+  
+    
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="e2.jpeg" style="width:100%" onclick="currentSlide(1)" alt="the sea">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="e1.jpeg" style="width:100%" onclick="currentSlide(2)" alt="paradise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="e3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="me">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="mark.jpeg" style="width:100%" onclick="currentSlide(4)" alt="mark pakin">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="lilo.jpeg" style="width:100%" onclick="currentSlide(5)" alt="lilo">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="e4.jpeg" style="width:100%" onclick="currentSlide(6)" alt="worth remembering">
+      </div>
+    </div>
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+<p>Them.</p>
+<p>The sea, her sanctuary. It is the place she goes to unwind. 
+A picture of herself appreciating of God's miracles. She greatly admires Mark Pakin, who is depicted in this photo with the sea. Her dog, Lilo, served as the impetus for her booming passion.
+</i></i>
+<br> 
+<h5><i>Ab aqua libertas.</i>
+</h5></p>
+</div>
+<div class="card">
+<img src="s1.jpeg" style = "width:670px">
+</div>
+</div>
+
+<div class="rightcolumn"> 
+<div class="card">
+<h2>Get to Know Elaine!</h2>
+<img src="me.jpeg" style = "width:220px" >
+<h3>Interests</h3>
+<p>• She is interested in taking pictures, especially of the azure seascapes. Tennis and piano are two other things she wants to learn. She wants to visit locations with renowned Mediterranean coastlines like Amalfi, Italy, and Nice, France. <br>
+<h3>Education</h3>
+• M.S in Radiologic Technology from Yale School of Medicine. B.S in Radiologic Technology from University of Cambridge Medical School.<br>
+<h3>Hobbies</h3>
+• She likes baking, watching films, reading books, listening to music, swimming, seashell hunting, and scrolling through TikTok. She reads books and watch movies as pastime mostly. 
+<h3>Other Information</h3>
+• She is extremely fond of her pet dog, Lilo, who is also her closest companion. Together, they would frequently look at and adore the sea; Lilo shares Elaine's passion for the sea in this regard.
+ </p>
+</div>
+
+<div class="card">
+<h2>Current Fave Films & Albums</h2>
+<img src="q1.jpeg" style = "width:220px">
+<img src="q2.jpeg" style = "width:220px">
+<img src="q3.jpeg" style = "width:220px">
+<img src="q4.jpeg" style = "width:220px">
+<img src="q5.jpeg" style = "width:220px">
+<img src="q6.jpeg" style = "width:220px">
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+<h6>It was summer I would never, ever forget.</h6>
+</div>
+
+</body>
+</html>
